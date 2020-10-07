@@ -1,0 +1,21 @@
+
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "target": "es5",
+  },
+  "files": [
+    "src/index.ts"
+  ],
+  "include": ["src"],
+}
