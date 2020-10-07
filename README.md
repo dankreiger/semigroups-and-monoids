@@ -1,5 +1,10 @@
 # validations with monoids
 
+
+
+
+everything is blank except `demoValidation.js`
+
 TODO:
 
 - create types/interfaces

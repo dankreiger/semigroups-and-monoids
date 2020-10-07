@@ -21,7 +21,23 @@
   "scripts": {
     "test": "jest --coverage"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.md": [
+      "prettier --write"
+    ],
+    "src/**/*.{js,ts,tsx,jsx,json,css}": [
+      "prettier --single-quote --write"
+    ]
+  },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
